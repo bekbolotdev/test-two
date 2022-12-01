@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ a{
+     text-decoration: none;
+ }
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+body{
+    background: linear-gradient(40deg,blue,crimson,blue);
+    min-height: 100vh;
+
+}
+.real-nav {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(60deg,lawngreen,violet,darkblue,darkred,rebeccapurple,crimson,deeppink,blue);
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+.real img{
+    background: darkblue;
+    width: 280px;
+    height: 280px;
+}
+
+.welcome input{
+    display: none;
+}
+
+#all:checked ~ .real,
+#all:checked ~ .barca,
+#all:checked ~ .chelsea,
+#all:checked ~ .manchester{
+    opacity: 1;
+    transition: .4s;
+}
+#real:checked ~ .barca,
+#real:checked ~ .chelsea,
+#real:checked ~ .manchester{
+    opacity: 0.1;
+    transition: .4s;
+}
+#barca:checked ~ .real,
+#barca:checked ~ .chelsea,
+#barca:checked ~ .manchester{
+    opacity: 0.1;
+    transition: .4s;
+}
+#chelsea:checked ~ .real,
+#chelsea:checked ~ .barca,
+#chelsea:checked ~ .manchester{
+    opacity: 0.1;
+    transition: .4s;
+}
+#manchester:checked ~ .real,
+#manchester:checked ~ .barca,
+#manchester:checked ~ .chelsea{
+    opacity: 0.1;
+    transition: .4s;
+}
+
